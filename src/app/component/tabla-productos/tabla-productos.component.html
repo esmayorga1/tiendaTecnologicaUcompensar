@@ -1,0 +1,146 @@
+<div class="container mx-auto">
+    <form action="">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+
+            <div class="mb-2">
+                <label for="nombre-producto" class="block text-sm font-medium dark:text-gray-300">Id del
+                    producto</label>
+                <input type="text" id="nombre-producto" name="nombre_producto" [(ngModel)]="formData.nombre_producto"
+                    class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm p-2.5 rounded-md dark:bg-gray-700 dark:text-white">
+            </div>
+            <div class="mb-2">
+                <label for="marca" class="block text-sm font-medium dark:text-gray-300">Fecha de lanzamiento</label>
+                <input type="text" id="marca" name="marca" [(ngModel)]="formData.marca"
+                    class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm p-2.5 rounded-md dark:bg-gray-700 dark:text-white">
+            </div>
+
+
+            <div class="mb-2">
+                <label for="nombre-producto" class="block text-sm font-medium dark:text-gray-300">Nombre del
+                    producto</label>
+                <input type="text" id="nombre-producto" name="nombre_producto" [(ngModel)]="formData.nombre_producto"
+                    class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm p-2.5 rounded-md dark:bg-gray-700 dark:text-white">
+            </div>
+            <div class="mb-2">
+                <label for="marca" class="block text-sm font-medium dark:text-gray-300">Marca</label>
+                <input type="text" id="marca" name="marca" [(ngModel)]="formData.marca"
+                    class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm p-2.5 rounded-md dark:bg-gray-700 dark:text-white">
+            </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+            <div class="mb-2 md:col-span-2">
+                <label for="descripcion" class="block text-sm font-medium dark:text-gray-300">Descripción</label>
+                <textarea id="descripcion" name="descripcion" [(ngModel)]="formData.descripcion"
+                    class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm p-2.5 rounded-md dark:bg-gray-700 dark:text-white"
+                    rows="3"></textarea>
+            </div>
+            <div class="mb-2">
+                <label for="precio-venta" class="block text-sm font-medium dark:text-gray-300">Precio de venta</label>
+                <input type="number" id="precio-venta" name="precio_venta" [(ngModel)]="formData.precio_venta"
+                    class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm p-2.5 rounded-md dark:bg-gray-700 dark:text-white">
+            </div>
+            <div class="mb-2">
+                <label for="precio-regular" class="block text-sm font-medium dark:text-gray-300">Precio regular</label>
+                <input type="number" id="precio-regular" name="precio_regular" [(ngModel)]="formData.precio_regular"
+                    class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm p-2.5 rounded-md dark:bg-gray-700 dark:text-white">
+            </div>
+            <div class="mb-2">
+                <label for="categoria" class="block text-sm font-medium dark:text-gray-300">Categoría</label>
+                <input type="text" id="categoria" name="categoria" [(ngModel)]="formData.categoria"
+                    class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm p-2.5 rounded-md dark:bg-gray-700 dark:text-white">
+            </div>
+
+            <div class="mb-2">
+                <label for="imagen" class="block text-sm font-medium dark:text-gray-300">Imagen</label>
+                <input type="text" id="imagen" name="imagen" [(ngModel)]="formData.imagen"
+                    class="shadow-sm bg-gray-50 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm p-2.5 rounded-md dark:bg-gray-700 dark:text-white">
+            </div>
+        </div>
+
+        <div class="flex justify-end gap-4">
+            <button type="submit"
+                class="inline-flex items-center px-4 py-2 bg-indigo-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-indigo-700 active:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 disabled:opacity-25">Agregar</button>
+            <button type="button"
+                class="inline-flex items-center px-4 py-2 bg-gray-200 border border-transparent rounded-md font-semibold text-xs text-gray-600 uppercase tracking-widest hover:bg-gray-300 active:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 disabled:opacity-25">Editar</button>
+        </div>
+
+    </form>
+</div>
+
+
+
+        <div class="relative overflow-x-auto">
+            <table class="w-full text-sm text-left rtl:text-right dark:text-gray-400">
+                <thead class="text-xs text-gray-900 uppercase  dark:bg-gray-800">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 border-l ">
+                            Nombre del producto
+                        </th>
+                        <th scope="col" class="px-6 py-3 border-l ">
+                            Marca
+                        </th>
+                        
+                        
+                        
+                        <th scope="col" class="px-6 py-3 border-l ">
+                            Precio de venta
+                        </th>
+                        <th scope="col" class="px-6 py-3 border-l ">
+                            Precio regular
+                        </th>
+                        <th scope="col" class="px-6 py-3 border-l">
+                            Categoría
+                        </th>
+                        
+                        
+                        
+                        <th scope="col" class="px-6 py-3 border-l ">
+                            Acciones
+                        </th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let product of product" class="dark:bg-gray-700">
+                    <tr class="border-b border-t border-right border-l ">
+                        <th scope="row"
+                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white border-l ">
+                            {{ product.name }}
+                        </th>
+                        <td class="px-6 py-4 border-l ">
+                            {{ product.marca }}
+                        </td>
+                        
+                        
+                        
+                        <td class="px-6 py-4 border-l ">
+                            {{ product.precio_venta }}
+                        </td>
+                        <td class="px-6 py-4 border-l ">
+                            {{ product.precio_regular }}
+                        </td>
+                                                                                                                             
+                        <td class="px-6 py-4 border-l ">
+                            <button  (click)="onEditClick(product.id)" class="font-medium text-blue-600 dark:text-blue-500 hover:underline" >Editar </button>
+                        </td>
+                        <td class="px-6 py-4 border-l ">
+                            <a href="#"
+                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+  

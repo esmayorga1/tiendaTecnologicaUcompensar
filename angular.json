@@ -68,7 +68,10 @@
               "buildTarget": "market:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development", 
+          "options": {
+            "disableHostCheck": true
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -96,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "866f451d-2410-4a52-b4db-2a32a0ce65ba"
   }
 }

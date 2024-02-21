@@ -1,0 +1,405 @@
+[
+    {
+        "id": "1",
+        "name": "Computador LENOVO",
+        "marca": "lenovo",
+        "description" : "Computador Portátil LENOVO 15,6 Pulgadas IdeaPad Slim 3 Táctil - Intel Core i5 - RAM 8GB - Disco SSD 512GB",
+        "categoria" : ["Computadores", "Tecnologia", "Computadora", "Ordenador", "Portatil"], 
+        "imagUrl": [
+            "../../../assets/img/compu/comp1.jpg",
+            "../../../assets/img/compu/comp2.jpg",
+            "../../../assets/img/compu/comp3.jpg"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-computadores",
+        "fecha_lanzamiento": "20-01-2020"
+    
+    },
+
+    {
+        "id": "2",
+        "name": "Computador Asus",
+        "marca": "Asus",
+        "description" : "Computador Portátil LENOVO 15,6 Pulgadas IdeaPad Slim 3 Táctil - Intel Core i5 - RAM 8GB - Disco SSD 512GB",
+        "categoria" : ["Computadores", "Tecnologia", "Computadora", "Ordenador", "Portatil"], 
+        "imagUrl": [
+            "../../../assets/img/compu/comp2.jpg",
+            "../../../assets/img/compu/comp1.jpg",
+            "../../../assets/img/compu/comp3.jpg"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-computadores",
+        "fecha_lanzamiento": "20-01-2022"
+        
+    },
+
+    {
+        "id": "3",
+        "name": "Computador Asus",
+        "marca": "Asus",
+        "description" : "Computador Portátil ASUS 15,6 Pulgadas IdeaPad Slim 3 Táctil - Intel Core i5 - RAM 8GB - Disco SSD 512GB",
+        "categoria" : ["Computadores", "Tecnologia", "Computadora", "Ordenador", "Portatil"], 
+        "imagUrl": [
+            "../../../assets/img/compu/comp3.jpg",
+            "../../../assets/img/compu/comp1.jpg",
+            "../../../assets/img/compu/comp2.jpg"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-computadores",
+        "fecha_lanzamiento": "20-01-2022"
+        
+    },
+
+    {
+        "id": "4",
+        "name": "Computador HP",
+        "marca": "HP",
+        "description" : "Computador Portátil HP 15,6 Pulgadas IdeaPad Slim 3 Táctil - Intel Core i5 - RAM 8GB - Disco SSD 512GB",
+        "categoria" : ["Computadores", "Tecnologia", "Computadora", "Ordenador", "Portatil"], 
+        "imagUrl": [
+            "../../../assets/img/compu/comp2.jpg",
+            "../../../assets/img/compu/comp3.jpg",
+            "../../../assets/img/compu/comp2.jpg"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-computadores",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "5",
+        "name": "Computador LENOVO",
+        "marca": "LENOVO",
+        "description" : "Computador Portátil HP 15,6 Pulgadas IdeaPad Slim 3 Táctil - Intel Core i5 - RAM 8GB - Disco SSD 512GB",
+        "categoria" : ["Computadores", "Tecnologia", "Computadora", "Ordenador", "Portatil"], 
+        "imagUrl": [
+            "../../../assets/img/compu/comp3.jpg",
+            "../../../assets/img/compu/comp1.jpg",
+            "../../../assets/img/compu/comp2.jpg"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-computadores",
+        "fecha_lanzamiento": "20-01-2023"
+        
+    },
+
+    {
+        "id": "6",
+        "name": "Computador HP",
+        "marca": "HP",
+        "description" : "Computador Portátil HP 15,6 Pulgadas IdeaPad Slim 3 Táctil - Intel Core i5 - RAM 8GB - Disco SSD 512GB",
+        "categoria" : ["Computadores", "Tecnologia", "Computadora", "Ordenador", "Portatil"], 
+        "imagUrl": [
+            "../../../assets/img/compu/comp2.jpg",
+            "../../../assets/img/compu/comp3.jpg",
+            "../../../assets/img/compu/comp2.jpg"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-computadores",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "Cel-001",
+        "name": "Celular REDMI",
+        "marca": "REDMI",
+        "description" : "Celular REDMI Note 13 Pro 256GB Negro",
+        "categoria" : ["Celular", "Tecnologia", "Celulares", "telefono", "celu"], 
+        "imagUrl": [
+            "../../../assets/img/cel/celu4.png",
+            "../../../assets/img/cel/celu4.png",
+            "../../../assets/img/cel/celu1.png"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-celular",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "Cel-002",
+        "name": "Celular Apple",
+        "marca": "apple",
+        "description" : "Celular APPLE Note 13 Pro 256GB Negro",
+        "categoria" : ["Celular", "Tecnologia", "Celulares", "telefono", "celu"], 
+        "imagUrl": [
+            "../../../assets/img/cel/celu1.png",
+            "../../../assets/img/cel/celu2.png",
+            "../../../assets/img/cel/celu3.png"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-celular",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "Cel-003",
+        "name": "Celular Apple",
+        "marca": "apple",
+        "description" : "Celular APPLE Note 13 Pro 256GB Negro",
+        "categoria" : ["Celular", "Tecnologia", "Celulares", "telefono", "celu"], 
+        "imagUrl": [
+            "../../../assets/img/cel/celu2.png",
+            "../../../assets/img/cel/celu4.png",
+            "../../../assets/img/cel/celu1.png"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-celular",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "Cel-004",
+        "name": "Celular Samsung",
+        "marca": "Sansung",
+        "description" : "Celular Samsumg Note 13 Pro 256GB Negro",
+        "categoria" : ["Celular", "Tecnologia", "Celulares", "telefono", "celu"], 
+        "imagUrl": [
+            "../../../assets/img/cel/celu3.png",
+            "../../../assets/img/cel/celu4.png",
+            "../../../assets/img/cel/celu2.png"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-celular",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "Cel-005",
+        "name": "Celular Samsung",
+        "marca": "Sansung",
+        "description" : "Celular Samsumg Note 13 Pro 256GB Negro",
+        "categoria" : ["Celular", "Tecnologia", "Celulares", "telefono", "celu"], 
+        "imagUrl": [
+            "../../../assets/img/cel/celu1.png",
+            "../../../assets/img/cel/celu2.png",
+            "../../../assets/img/cel/celu3.png"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-celular",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "Cel-006",
+        "name": "Celular Nokia",
+        "marca": "apple",
+        "description" : "Celular Nokia Note 13 Pro 256GB Negro",
+        "categoria" : ["Celular", "Tecnologia", "Celulares", "telefono", "celu"], 
+        "imagUrl": [
+            "../../../assets/img/cel/celu4.png",
+            "../../../assets/img/cel/celu2.png",
+            "../../../assets/img/cel/celu3.png"     
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-celular",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "tv-001",
+        "name": "Tv Samsung",
+        "marca": "Samsung",
+        "description" : "TV SAMSUNG 55 Pulgadas 139.7 cm 55CU7000 4K-UHD LED Smart TV",
+        "categoria" : ["Televisores", "Tecnologia", "Tv", "Pantalla", "Pantalla plana", "televisor"], 
+        "imagUrl": [
+            "../../../assets/img/tv/tv1.jpg",
+            "../../../assets/img/tv/tv2.jpg",
+            "../../../assets/img/tv/tv3.jpg"
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-tv",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "tv-002",
+        "name": "Tv Samsung",
+        "marca": "Samsung",
+        "description" : "TV SAMSUNG 55 Pulgadas 139.7 cm 55CU7000 4K-UHD LED Smart TV",
+        "categoria" : ["Televisores", "Tecnologia", "Tv", "Pantalla", "Pantalla plana", "televisor"], 
+        "imagUrl": [
+            "../../../assets/img/tv/tv2.jpg",
+            "../../../assets/img/tv/tv1.jpg",
+            "../../../assets/img/tv/tv3.jpg"
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-tv",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+    {
+        "id": "tv-003",
+        "name": "Tv LG",
+        "marca": "LG",
+        "description" : "TV LG 55 Pulgadas 139.7 cm 55CU7000 4K-UHD LED Smart TV",
+        "categoria" : ["Televisores", "Tecnologia", "Tv", "Pantalla", "Pantalla plana", "televisor"], 
+        "imagUrl": [
+            "../../../assets/img/tv/tv3.jpg",
+            "../../../assets/img/tv/tv1.jpg",
+            "../../../assets/img/tv/tv2.jpg"
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-tv",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+
+    {
+        "id": "tv-004",
+        "name": "Tv LG",
+        "marca": "LG",
+        "description" : "TV LG 55 Pulgadas 139.7 cm 55CU7000 4K-UHD LED Smart TV",
+        "categoria" : ["Televisores", "Tecnologia", "Tv", "Pantalla", "Pantalla plana", "televisor"], 
+        "imagUrl": [
+            "../../../assets/img/tv/tv4.jpg",
+            "../../../assets/img/tv/tv1.jpg",
+            "../../../assets/img/tv/tv2.jpg"
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-tv",
+        "fecha_lanzamiento": "20-01-2024"
+        
+    },
+    {
+        "id": "tv-005",
+        "name": "Tv LG",
+        "marca": "LG",
+        "description" : "TV LG 55 Pulgadas 139.7 cm 55CU7000 4K-UHD LED Smart TV",
+        "categoria" : ["Televisores", "Tecnologia", "Tv", "Pantalla", "Pantalla plana", "televisor"], 
+        "imagUrl": [
+            "../../../assets/img/tv/tv3.jpg",
+            "../../../assets/img/tv/tv1.jpg",
+            "../../../assets/img/tv/tv2.jpg"
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-tv",
+        "fecha_lanzamiento": "20-01-2024"
+    },
+
+    {
+        "id": "tv-006",
+        "name": "Tv LG",
+        "marca": "LG",
+        "description" : "TV LG 55 Pulgadas 139.7 cm 55CU7000 4K-UHD LED Smart TV",
+        "categoria" : ["Televisores", "Tecnologia", "Tv", "Pantalla", "Pantalla plana", "televisor"], 
+        "imagUrl": [
+            "../../../assets/img/tv/tv4.jpg",
+            "../../../assets/img/tv/tv1.jpg",
+            "../../../assets/img/tv/tv2.jpg"
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-tv",
+        "fecha_lanzamiento": "20-01-2024"
+    },
+
+    {
+        "id": "vj-001",
+        "name": "Consola XBOX",
+        "marca": "XBOX ",
+        "description" : "Consola XBOX Series S 512 GB + 1 Control Inalámbrico",
+        "categoria" : ["Video juegos", "Tecnologia", "consolas", "consola", "Juegos", "video juego"], 
+        "imagUrl": [
+            "../../../assets/img/vj/v2.jpg",
+            "../../../assets/img/vj/v1.jpg",
+            "../../../assets/img/vj/v3.jpg"
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-video-juegos",
+        "fecha_lanzamiento": "20-01-2024"
+    },
+
+    {
+        "id": "vj-002",
+        "name": "Consola XBOX",
+        "marca": "XBOX ",
+        "description" : "Consola XBOX Series S 512 GB + 1 Control Inalámbrico",
+        "categoria" : ["Video juegos", "Tecnologia", "consolas", "consola", "Juegos", "video juego"], 
+        "imagUrl": [
+            "../../../assets/img/vj/v1.jpg",
+            "../../../assets/img/vj/v2.jpg",
+            "../../../assets/img/vj/v3.jpg"
+         
+         
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-video-juegos",
+        "fecha_lanzamiento": "20-01-2024"
+    },
+
+    {
+        "id": "vj-003",
+        "name": "PLAY STATION",
+        "marca": "PLAY STATION",
+        "description" : "CConsola PS5 Estándar 825GB + 1 Control Dualsense",
+        "categoria" : ["Video juegos", "Tecnologia", "consolas", "consola", "Juegos", "video juego"], 
+        "imagUrl": [
+            "../../../assets/img/vj/v3.jpg",
+            "../../../assets/img/vj/v1.jpg",
+            "../../../assets/img/vj/v2.jpg"
+            
+        ],
+        "precio_venta": 2099000,
+        "precio_regular": 300000,
+        "slug": "tipo-video-juegos",
+        "fecha_lanzamiento": "20-01-2024"
+    }
+        
+
+                                            
+
+
+   
+   
+   
+   
+   
+   
+]

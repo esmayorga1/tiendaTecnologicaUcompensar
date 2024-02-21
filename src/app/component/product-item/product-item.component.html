@@ -1,0 +1,24 @@
+<div class="lg:w-4/4 md:w-4/4 p-4 w-full relative">
+  <a class="block h-48 rounded-lg overflow-hidden">
+    <img [routerLink]="['product', product?.id]" alt="ecommerce" class="object-cover object-center w-full h-full block"
+      [src]="product ? product.imagUrl[0] : ''" />
+  </a>
+
+  
+
+
+  
+
+  <div class="mt-4">
+    <h2 class="text-gray-900 title-font text-xl font-medium">
+      {{ product.name?.substring(0, 20) }}
+      {{ product && product.name[21] ? "..." : null }}
+    </h2>
+    <p class="mt-1"><span class="text-xl font-medium text-gray-700"> Precio:</span> <span class="ml-2 text-xl font-semibold text-green-600"> {{ product?.precio_venta }} </span> </p>
+
+    <strong> Antes: </strong><del> <span class="text-red-600"> {{ product?.precio_regular }}</span></del>
+    <br />
+
+    <a [routerLink]="['product', product?.id]" class="hover:underline">
+      Ver más detalles</a>
+  </div>

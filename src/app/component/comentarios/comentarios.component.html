@@ -1,0 +1,19 @@
+<div class="comentarios bg-white p-4 shadow-md">
+  <h2 class="text-xl font-bold text-gray-700">Comentarios</h2>
+  <ul class="list-none m-0 p-0">
+    <li *ngFor="let comentario of comentarios" class="border-b-2 border-gray-200 p-2">
+      <p class="text-sm font-medium text-gray-600">{{ comentario.autor }}</p>
+      <p class="text-base text-gray-800">{{ comentario.contenido }}</p>
+    </li>
+  </ul>
+  <form (submit)="agregarComentario()" #comentarioForm="ngForm" class="flex flex-col gap-4">
+    <input type="text" [(ngModel)]="nuevoComentario.autor" placeholder="Nombre" name="autor" required
+      class="border border-gray-300 rounded p-2 w-full focus:outline-none" />
+    <textarea [(ngModel)]="nuevoComentario.contenido" placeholder="Comentario" name="contenido" required
+      class="border border-gray-300 rounded p-2 w-full h-24 focus:outline-none"></textarea>
+    <button [disabled]="comentarioForm.invalid"
+      class="bg-blue-500 text-white py-2 px-4 rounded disabled:opacity-50 hover:bg-blue-700">
+      Agregar comentario
+    </button>
+  </form>
+</div>
