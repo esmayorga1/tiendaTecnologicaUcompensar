@@ -1,4 +1,19 @@
 export interface Product{
+    id?: string;
+    Nombre: string;
+    Descripcion: string;
+    Marca?: string;
+    categoria: string[];
+    ImagenProductos?: string[];
+    imagUrl?: string[];
+    PrecioVenta: number;
+    PrecioRegular: number;
+    Slug?: string;
+    FechaLanzamiento ?: Date;
+}
+
+/*
+export interface Product{
     id: string;
     name: string;
     description: string;
@@ -12,5 +27,5 @@ export interface Product{
     create_ar?: Date;
     date?: Date;
 
-}
+}*/
 

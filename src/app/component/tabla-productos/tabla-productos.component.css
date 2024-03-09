@@ -1,3 +1,10 @@
 .border-l{
     border: solid 1px !important; 
 }
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(63, 63, 206);
+    font-size: 20px;
+    
+}

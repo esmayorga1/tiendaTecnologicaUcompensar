@@ -3,6 +3,7 @@ import { apiServe } from '../apiServe';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product';
+import { environment } from '../../environments/environments';
 
 
 @Injectable({
@@ -10,36 +11,38 @@ import { Product } from '../models/product';
 })
 export class ProductsService {
 
-  private ApiUrl: string = apiServe.serveUrl
+  private ApiUrl: string = environment.apiEndpoint
+ 
+ 
 
-  constructor(private http: HttpClient) {   }
+  constructor(private http: HttpClient) { }
 
   // Sistema de administración para incorporar los datos base para la consulta
 
-   getProduct(): Observable<Product[]>{
+
+  getProduct(): Observable<Product[]>{
     return this.http.get<Product[]>(`${this.ApiUrl}`);
   }
 
-  getProductById(productId: string): Observable<Product> {
-    return this.http.get<Product>(`${this.ApiUrl}/products${productId}`);
-    
+  getProductById(productId: string): Observable<Product>{
+    return this.http.get<Product>(this.ApiUrl + '/'+ productId);}
+
+  
+ 
+ 
+deleteProduct(productId: string): Observable<void> {
+  return this.http.delete<void>(`${this.ApiUrl}/${productId}`);
+}
+
+  addProduct(product: Product): Observable<void> {
+    return this.http.post<void>(this.ApiUrl + '/', product)
   }
 
-  addProduct(product: Product): Observable<Product> {
-    return this.http.post<Product>(`${this.ApiUrl}/products`, product);
-  }
+  
 
-  updateProduct(product: Product): Observable<Product> {
-    return this.http.put<Product>(`${this.ApiUrl}/products/${product.id}`, product);
+  updateProduct(id: string, product: Product): Observable<void> {
+    return this.http.put<void>(this.ApiUrl + '/'+ id, product);
+   
   }
-
-  deleteProduct(productId: string): Observable<void> {
-    return this.http.delete<void>(`${this.ApiUrl}/products/${productId}`);
-  }
-
-  deleteCategory(categoryId: string): Observable<void> {
-    return this.http.delete<void>(`${this.ApiUrl}/categories/${categoryId}`);
-  }
-
 
 }

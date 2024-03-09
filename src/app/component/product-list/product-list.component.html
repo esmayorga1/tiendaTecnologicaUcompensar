@@ -1,5 +1,4 @@
 <!-- product-list.component.html -->
-
 <div *ngIf="product.length > 0; else noResults">
     <div class="flex flex-wrap -m-4">
       <app-product-item *ngFor="let product of product" [product]="product"></app-product-item>

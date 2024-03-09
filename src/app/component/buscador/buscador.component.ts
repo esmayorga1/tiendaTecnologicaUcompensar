@@ -22,7 +22,7 @@ export class BuscadorComponent {
      
       const searchResults = searchTermLower
         ? products.filter(product =>
-            product.name.toLowerCase().includes(searchTermLower) ||
+            product.Nombre.toLowerCase().includes(searchTermLower) ||
             product.categoria.some(category => category.toLowerCase().includes(searchTermLower))
           )
         : products;

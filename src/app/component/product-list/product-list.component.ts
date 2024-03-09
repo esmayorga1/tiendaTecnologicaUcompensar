@@ -23,62 +23,22 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
     constructor(private productService: ProductsService, private searchService: SearchService) { }
 
-   /* ngOnInit(): void {
-        this.productSub = this.productService.getProduct().subscribe({
-            next: (product: Product[]) => {
-                this.product = product
-                // console.log(this.product)
-
-                if (this.searchTerm.trim() !== '') {
-                    this.search();
-                  }
-            },
-            error: (err: any) => {
-                console.error(err)
-            },
-            complete: () => {
-                console.log('completado')
-            }
-        })
-
-        this.searchService.currentResults.subscribe((results) => {
-            this.product = results;
-          });
-
-    }
-
-    
-
-    ngOnDestroy(): void {
-        this.productSub?.unsubscribe();
-        
-    }
-
-    search() {
-        const searchTermLower = this.searchTerm.toLowerCase();
-    
-        // Filtra los productos solo si hay un término de búsqueda
-        const searchResults = searchTermLower
-          ? this.product.filter((product) => product.name.toLowerCase().includes(searchTermLower))
-          : this.product;
-    
-        this.searchService.updateResults(searchResults);
-      }*/
-
       ngOnInit(): void {
         this.productSub = this.productService.getProduct().subscribe({
           next: (products: any[]) => {
             this.product = products;
     
             if (this.searchTerm.trim() !== '') {
-              this.search();
+              //this.search();
             }
           },
           error: (err: any) => {
+            console.log("Error")
             console.error(err);
           },
           complete: () => {
             console.log('completado');
+            console.log(this.product)
           }
         });
     
@@ -86,8 +46,8 @@ export class ProductListComponent implements OnInit, OnDestroy {
           this.product = results;
         });
     
-        // Realiza la búsqueda inicial al cargar la página
-        this.search();
+    
+        // this.search();
       }
     
       ngOnDestroy(): void {
@@ -95,18 +55,18 @@ export class ProductListComponent implements OnInit, OnDestroy {
       }
  
      
-
+/*
       search() {
         const searchTermLower = this.searchTerm.toLowerCase();
       
         // Filtra los productos solo si hay un término de búsqueda
         const searchResults = searchTermLower
           ? this.product.filter((product) => 
-              product.name.toLowerCase().includes(searchTermLower) ||
+              product.Nombre.toLowerCase().includes(searchTermLower) ||
               product.categoria.some((category: string) => category.toLowerCase().includes(searchTermLower))
             )
           : this.product;
       
         this.searchService.updateResults(searchResults);
-      }
+      }*/
 }

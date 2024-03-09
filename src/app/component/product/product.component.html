@@ -1,12 +1,16 @@
 <section class="text-gray-600 body-font overflow-hidden">
   <div class="container px-5 py-24 mx-auto">
     <div class="lg:w-4/5 mx-auto flex flex-wrap">
+
       <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
         [src]="currentImg" />
+
+
+
       <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
         <h2 class="text-sm title-font text-gray-500 tracking-widest"></h2>
         <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">
-          {{ product?.name }}
+          {{ product?.Nombre }}
         </h1>
         <div class="flex mb-4">
           <span class="flex items-center">
@@ -62,7 +66,7 @@
             </a>
           </span>
         </div>
-        <p class="leading-relaxed">{{ product?.description }}</p>
+        <p class="leading-relaxed">{{ product?.Descripcion }}</p>
         <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
           <div class="flex">
             <span class="mr-3">Color</span>
@@ -75,9 +79,9 @@
 
         <div>
           
-            <span> Marca: </span> <span> {{ product?.marca }}</span>
+            <span> Marca: </span> <span> {{ product?.Marca }}</span>
             <br>
-            <span> Fecha de lanzamiento: </span>  <span> {{ product?.fecha_lanzamiento }} </span>
+            <span> Fecha de lanzamiento: </span>  <span> {{ product?.FechaLanzamiento }} </span>
 
         </div>
         <br>
@@ -87,7 +91,7 @@
 
         <div class="flex">
           <span class="title-font font-medium text-2xl text-gray-900">
-            <span> Precio: </span> {{ product?.precio_venta }}</span>
+            <span> Precio: </span> {{ product?.PrecioVenta }}</span>
         
           <button
             class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
@@ -105,11 +109,22 @@
         </div>
       </div>
 
-      <div class="lg:w-7/6 flex flex-wrap" *ngFor="let itemImg of product?.imagUrl">
-        <img alt="ecommerce"
+      <div class="lg:w-7/6 flex flex-wrap">
+        <img 
+          *ngFor="let itemImg of product?.ImagenProductos; let i = index"
+          alt="ecommerce"
           class="lg:w-7/6 lg:h-24 h-12 object-cover object-center border border-slate-300 hover:border-indigo-300 rounded"
-          [src]="itemImg" (click)="cambioImg(itemImg)" />
+          [src]="itemImg.UrlImagen"
+          (click)="cambioImg(itemImg.UrlImagen)"
+        />
       </div>
+      
+      
+      
+      
+      
+
+      
     </div>
   </div>
 </section>

@@ -1,5 +1,5 @@
 export const apiServe = {
-    serveUrl: 'http://localhost/assets/inf/products.json',
+    serveUrl: 'http://localhost:3005/api/producto',
     
 
     
