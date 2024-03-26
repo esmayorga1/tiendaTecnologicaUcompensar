@@ -34,11 +34,11 @@ export const getProducts = async (req: Request, res: Response) => {
     const listProducts = await Product.findAll({
       include: ImagenProducto,
     });
-
+    console.log('vas bien');
     res.json(listProducts);
   } catch (error) {
     console.log(error);
-    res.status(500).json({ msg: 'Error al obtener los productos' });
+    res.status(500).json({ msg: 'Error al obtener los productos 2' });
   }
 };
 
@@ -110,7 +110,7 @@ export const postProduct = async (req: Request, res: Response) => {
 
   try {
     await Product.create(body);
-    // await ImagenProducto.create(body);
+    await ImagenProducto.create(body);
 
     res.json({
       msg: `El producto fue agregado con exito!`,

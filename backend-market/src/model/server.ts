@@ -1,5 +1,6 @@
 import express from 'express';
 import routerProduct from '../router/product';
+import routerImagenProducto from '../router/imagenProducto'
 import cors from 'cors';
 import db from '../bd/connetion';
 class Server {
@@ -29,6 +30,10 @@ class Server {
       });
     });
     this.app.use('/api/producto', routerProduct);
+    this.app.use('/api/imagenProducto', routerImagenProducto);
+
+
+
   }
 
   midlewares() {

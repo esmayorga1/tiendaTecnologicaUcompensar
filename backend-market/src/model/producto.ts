@@ -25,7 +25,7 @@ export const Producto = sequelize.define(
     PrecioRegular: {
       type: DataTypes.DOUBLE,
     },
-    Slug: {
+    categoria: {
       type: DataTypes.STRING,
     },
     FechaLanzamiento: {

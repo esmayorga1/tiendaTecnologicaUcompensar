@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const imagenProduct_1 = require("../controloller/imagenProduct");
+const router = (0, express_1.Router)();
+router.get('/', imagenProduct_1.getImagenProduct);
+router.get('/:id', imagenProduct_1.getImagProductById);
+router.delete('/:id', imagenProduct_1.deleteImagProduct);
+router.post('/', imagenProduct_1.postImagProduct);
+router.put('/:id', imagenProduct_1.updateImagProduct);
+exports.default = router;

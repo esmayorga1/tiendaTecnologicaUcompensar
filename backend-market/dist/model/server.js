@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const product_1 = __importDefault(require("../router/product"));
+const imagenProducto_1 = __importDefault(require("../router/imagenProducto"));
 const cors_1 = __importDefault(require("cors"));
 const connetion_1 = __importDefault(require("../bd/connetion"));
 class Server {
@@ -29,6 +30,7 @@ class Server {
             });
         });
         this.app.use('/api/producto', product_1.default);
+        this.app.use('/api/imagenProducto', imagenProducto_1.default);
     }
     midlewares() {
         // Parseamos el body

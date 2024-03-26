@@ -28,7 +28,7 @@ exports.Producto = connetion_1.default.define('Producto', {
     PrecioRegular: {
         type: sequelize_1.DataTypes.DOUBLE,
     },
-    Slug: {
+    categoria: {
         type: sequelize_1.DataTypes.STRING,
     },
     FechaLanzamiento: {

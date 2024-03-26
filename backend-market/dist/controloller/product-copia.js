@@ -38,11 +38,12 @@ const getProducts = async (req, res) => {
         const listProducts = await producto_1.default.findAll({
             include: imagenProducto_1.default,
         });
+        console.log('vas bien');
         res.json(listProducts);
     }
     catch (error) {
         console.log(error);
-        res.status(500).json({ msg: 'Error al obtener los productos' });
+        res.status(500).json({ msg: 'Error al obtener los productos 2' });
     }
 };
 exports.getProducts = getProducts;
@@ -106,7 +107,7 @@ const postProduct = async (req, res) => {
     const { body } = req;
     try {
         await producto_1.default.create(body);
-        // await ImagenProducto.create(body);
+        await imagenProducto_1.default.create(body);
         res.json({
             msg: `El producto fue agregado con exito!`,
         });
